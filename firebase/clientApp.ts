@@ -1,14 +1,17 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage";
+// Import the functions you need from the SDKs you need
 
 const clientCredentials = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  apiKey: "AIzaSyAyEipM0cgYjCyZGhZF2cJewwWYf08IkRY",
+  authDomain: "keystone-295p.firebaseapp.com",
+  projectId: "keystone-295p",
+  storageBucket: "keystone-295p.appspot.com",
+  messagingSenderId: "578988953035",
+  appId: "1:578988953035:web:a9bfb5e4a6d904d0f8fa4e",
+  measurementId: "G-LES89K6YL1",
 };
 
 if (!firebase.apps.length) {

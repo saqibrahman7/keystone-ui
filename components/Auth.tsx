@@ -7,7 +7,7 @@ const uiConfig = {
   // Redirect to / after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
   signInSuccessUrl: "/",
   // We will display GitHub as auth providers.
-  signInOptions: [firebase.auth.GithubAuthProvider.PROVIDER_ID],
+  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
 };
 
 function SignInScreen() {
@@ -21,7 +21,7 @@ function SignInScreen() {
         justifyContent: "center",
       }}
     >
-      <h1>Pineapple Login</h1>
+      <h1>Login</h1>
       <p>Please sign-in:</p>
       <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
     </div>
